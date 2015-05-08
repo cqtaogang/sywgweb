@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="yyb">
+		<item>重庆中山一路</item>
+		<item>重庆杨家坪</item>
+		<item>重庆小新街</item>
+		<item>贵阳中华北路</item>
+		<item>重庆金开大道</item>
+		<item>重庆涪陵滨江大道</item>
+		<item>遵义南京路</item>
+	</string-array>
+ </resources>
+
