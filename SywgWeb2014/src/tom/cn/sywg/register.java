@@ -47,7 +47,7 @@ public class register extends Activity {
 					intent.setClass(register.this,LoginActivity.class);   
 					startActivity(intent);
 					//setContentView(R.layout.loginpage);
-					Log.v("register return", "register return");
+					Log.v("register", "register return");
 					break;
 				case R.id.register_btn_register:
 					Log.v("register ", "register ....");
