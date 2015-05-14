@@ -44,8 +44,8 @@ public class WebServiceUtil {
 		soapObject.addProperty("yyb", yyb);
 		soapObject.addProperty("username", username);
 		soapObject.addProperty("name", name);
-		soapObject.addProperty("tel", name);
-		soapObject.addProperty("mail", name);
+		soapObject.addProperty("tel", tel);
+		soapObject.addProperty("mail", mail);
 
 		envelope.bodyOut = soapObject;
 		// 设置与.Net提供的Web Service保持较好的兼容性

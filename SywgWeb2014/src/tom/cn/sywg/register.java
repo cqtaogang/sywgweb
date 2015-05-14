@@ -64,6 +64,7 @@ public class register extends Activity {
 					String tel = regTel.getText().toString();
 					String mail = regMail.getText().toString();
 					
+					
 					switch(yyb){
 					case 0:
 						yybx="2611";
@@ -88,7 +89,7 @@ public class register extends Activity {
 						break;
 				}
 				
-					Log.v("register",yyb+"/"+yybx+"/"+username+"/"+name);
+					Log.v("register",yyb+"/"+yybx+"/"+username+"/"+name+"/"+tel+"/"+mail);
 					
 					
 				
