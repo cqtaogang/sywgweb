@@ -29,7 +29,7 @@ public class WebServiceUtil {
 
 	// ------------
 
-	public static String register(String yyb, String username, String password) {
+	public static String register(String yyb, String username, String name,String tel,String mail) {
 		// 调用的方法
 		final String methodName = "register";
 		// 创建HttpTransportSE传输对象
@@ -43,7 +43,9 @@ public class WebServiceUtil {
 		SoapObject soapObject = new SoapObject(SERVICE_NS, methodName);
 		soapObject.addProperty("yyb", yyb);
 		soapObject.addProperty("username", username);
-		soapObject.addProperty("password", password);
+		soapObject.addProperty("name", name);
+		soapObject.addProperty("tel", name);
+		soapObject.addProperty("mail", name);
 
 		envelope.bodyOut = soapObject;
 		// 设置与.Net提供的Web Service保持较好的兼容性

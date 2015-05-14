@@ -17,7 +17,9 @@ public class register extends Activity {
 
 	private Spinner regYybSpinner;
 	private EditText regGh;
-	private EditText regPw;
+	private EditText regName;
+	private EditText regTel;
+	private EditText regMail;
 	private Button regButton;
 	private Button retButton;
 
@@ -27,8 +29,12 @@ public class register extends Activity {
 		setContentView(R.layout.register);
 		Log.v("register","register start");
 		regYybSpinner = (Spinner) findViewById(R.id.yybselect);
+		
 		regGh = (EditText) findViewById(R.id.register_edit_account);
-		regPw = (EditText) findViewById(R.id.login_edit_pwd);
+		regName = (EditText) findViewById(R.id.login_edit_name);
+		regTel = (EditText) findViewById(R.id.login_edit_tel);
+		regMail = (EditText) findViewById(R.id.login_edit_mail);
+		
 		regButton = (Button) findViewById(R.id.register_btn_register);
 		retButton = (Button) findViewById(R.id.register_btn_return);
 
@@ -54,7 +60,10 @@ public class register extends Activity {
 					String yybx="";
 					int yyb=regYybSpinner.getSelectedItemPosition();
 					String username = regGh.getText().toString();
-					String password = regPw.getText().toString();
+					String name = regName.getText().toString();
+					String tel = regTel.getText().toString();
+					String mail = regMail.getText().toString();
+					
 					switch(yyb){
 					case 0:
 						yybx="2611";
@@ -79,11 +88,11 @@ public class register extends Activity {
 						break;
 				}
 				
-					Log.v("register",yyb+"/"+yybx+"/"+username+"/"+password);
+					Log.v("register",yyb+"/"+yybx+"/"+username+"/"+name);
 					
 					
 				
-					String str=WebServiceUtil.register(yybx, username, password);
+					String str=WebServiceUtil.register(yybx, username, name,tel,mail);
 					Toast.makeText(getApplicationContext(), str, Toast.LENGTH_SHORT).show(); 
 					
 					break;

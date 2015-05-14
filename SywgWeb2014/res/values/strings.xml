@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
     <string name="hello">Hello World, Date!</string>
     <string name="app_name">成交量统计应用系统</string>
     <string name="strInputAccHint">输入帐号</string>
@@ -18,6 +19,10 @@
     <string name="user_login_sucess">用户：<xliff:g id="id2" example="tom">%1$s</xliff:g>登录，欢迎光临！</string>
     <string name="yyblistprompt">请选择营业部</string>
     <string name="registerreturn">返回</string>
-    <string name="strInputHintAcc">请输入工号</string>
+    <string name="strInputHintAcc">请输入账号（５位工号）</string>
+    <string name="strInputHintName">姓名</string>
+    <string name="strInputHintTel">电话</string>
+    <string name="strInputHintMail">邮箱　@swhysc.com</string>
     <string name="yybselectHint">请选择营业部</string>
+
 </resources>
