@@ -1,5 +1,9 @@
 package tom.cn.sywg;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
@@ -7,10 +11,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
-
 import android.widget.Toast;
 import android.content.Intent;
-
 import android.widget.Spinner;
 
 public class register extends Activity {
@@ -60,10 +62,9 @@ public class register extends Activity {
 					String yybx="";
 					int yyb=regYybSpinner.getSelectedItemPosition();
 					String username = regGh.getText().toString();
-					String name = regName.getText().toString();
+					String name=regName.getText().toString();
 					String tel = regTel.getText().toString();
 					String mail = regMail.getText().toString();
-					
 					
 					switch(yyb){
 					case 0:
@@ -89,10 +90,16 @@ public class register extends Activity {
 						break;
 				}
 				
-					Log.v("register",yyb+"/"+yybx+"/"+username+"/"+name+"/"+tel+"/"+mail);
+			/*	String strTest=regName.getText().toString();;
+				    try {
+						 strTest = URLEncoder.encode(name, "GB2312");
+					} catch (UnsupportedEncodingException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
 					
-					
-				
+					  */
+					Log.v("register",yyb+"/"+yybx+"/"+username+"/"+name+"/"+tel+"/"+mail+"/");
 					String str=WebServiceUtil.register(yybx, username, name,tel,mail);
 					Toast.makeText(getApplicationContext(), str, Toast.LENGTH_SHORT).show(); 
 					
