@@ -88,7 +88,13 @@ public class register extends Activity {
 					case 6:
 						yybx="2617";
 						break;
-				}
+					case 7:
+						yybx="8236";
+						break;					
+					case 8:
+						yybx="8259";
+						break;				
+					}
 				
 			/*	String strTest=regName.getText().toString();;
 				    try {

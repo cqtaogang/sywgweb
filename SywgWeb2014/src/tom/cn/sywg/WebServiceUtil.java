@@ -19,7 +19,8 @@ public class WebServiceUtil {
 	// static final String SERVICE_NS = "http://WebXml.com/";
 	// 定义Web Service提供服务的URL
 	//static final String SERVICE_URL = "http://218.70.15.66:16699/sw/swsoapserver.php";
-	static final String SERVICE_URL = "http://www.cntoman.com/sw/swsoapserver.php";
+	//static final String SERVICE_URL = "http://www.cntoman.com/sw/swsoapserver.php";
+	static final String SERVICE_URL = "http://58.17.241.16:9980/sw/swsoapserver.php";
 
 	// 定义Web Service的命名空间
 	// - static final String SERVICE_NS = "http://WebXml.com.cn/";
