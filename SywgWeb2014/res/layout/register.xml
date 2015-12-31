@@ -19,7 +19,10 @@
         android:layout_height="wrap_content"
         android:background="@drawable/qq_edit_login"
         android:hint="@string/strInputHintAcc"
+        android:textColorHint="#ffa500"
+        android:textColor="#ff0000ff"
         android:inputType="number"
+        android:selectAllOnFocus="true"
         android:saveEnabled="true" />
 
     <EditText
@@ -28,6 +31,9 @@
         android:layout_height="wrap_content"
         android:background="@drawable/qq_edit_login"
         android:hint="@string/strInputHintName"
+        android:textColorHint="#ffa500"
+        android:textColor="#ff0000ff"
+         android:selectAllOnFocus="true"
         android:inputType="text"
         android:saveEnabled="true" />
 
@@ -37,6 +43,9 @@
         android:layout_height="wrap_content"
         android:background="@drawable/qq_edit_login"
         android:hint="@string/strInputHintTel"
+        android:textColorHint="#ffa500"
+        android:textColor="#ff0000ff"
+        android:selectAllOnFocus="true"
         android:inputType="phone"
         android:saveEnabled="true" />
 
@@ -46,6 +55,9 @@
         android:layout_height="wrap_content"
         android:background="@drawable/qq_edit_login"
         android:hint="@string/strInputHintMail"
+        android:textColorHint="#ffa500"
+        android:textColor="#ff0000ff"
+         android:selectAllOnFocus="true"
         android:inputType="textEmailAddress"
         android:saveEnabled="true" />
 

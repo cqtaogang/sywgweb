@@ -175,7 +175,7 @@ public class LoginActivity extends Activity {
 	}
 
 	public String getLocalIpAddress() {
-		String ls = "";
+		//String ls = "";
 
 		try {
 

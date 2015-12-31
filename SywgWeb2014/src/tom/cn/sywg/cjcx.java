@@ -43,7 +43,7 @@ public class cjcx extends Activity {
 	}
 
 	OnClickListener rListener = new OnClickListener() {
-		String str = "";
+		//String str = "";
 
 		@Override
 		public void onClick(View v) {

@@ -1,8 +1,8 @@
 package tom.cn.sywg;
 
-import java.io.UnsupportedEncodingException;
-import java.net.URLDecoder;
-import java.net.URLEncoder;
+//import java.io.UnsupportedEncodingException;
+//import java.net.URLDecoder;
+//import java.net.URLEncoder;
 
 import android.app.Activity;
 import android.os.Bundle;
